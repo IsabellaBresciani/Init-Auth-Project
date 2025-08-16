@@ -2,6 +2,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const BadRequestException = require('../exceptions/BadRequestException.js');
 const userDao = require('../daos/userDao');
+const { stringify } = require('yamljs');
+require('dotenv').config();
 
 class AuthService {
 
@@ -31,11 +33,12 @@ class AuthService {
 
         const payload = { userId: user.id, email: user.email };
         const secretKey = process.env.JWT_SECRET;
-
+        const expiration = process.env.TOKE_EXPIRATION || '4h'; // Default to 30 seconds if not set
+        console.log(`Token expiration: ${expiration}`);
         const authToken = jwt.sign(
            payload,
             secretKey,
-            { expiresIn: '4h' }
+            { expiresIn: expiration } 
         );
 
         return authToken;
