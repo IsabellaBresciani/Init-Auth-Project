@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const checkHealthRoutes = require('./src/routes/checkHealth');
 const authRoutes = require('./src/routes/authRoutes');
-const birthdayRoutes = require('./src/routes/birthdayRoutes'); // ---> AÑADIDO <---
+
 
 //--------------------------------  App  --------------------------------
 const app = express();
