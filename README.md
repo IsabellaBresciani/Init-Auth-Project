@@ -11,10 +11,10 @@ Una aplicación simple de tipo full-stack que cuenta con un formulario para el u
 
 #  Tecnologías (Tech Stack)
 
-Frontend: React
-Backend: Node.js | Express.js
-Autenticación: JSON Web Token (jsonwebtoken) | bcrypt para el hasheo de contraseñas.
-Base de Datos: (Se asume) MongoDB con Mongoose o PostgreSQL con Sequelize.
+* Frontend: React
+* Backend: Node.js | Express.js
+* Autenticación: JSON Web Token (jsonwebtoken) | bcrypt para el hasheo de contraseñas.
+* Base de Datos: (Se asume) MongoDB con Mongoose o PostgreSQL con Sequelize.
 
 #  Cómo Funciona la Autenticación
 
