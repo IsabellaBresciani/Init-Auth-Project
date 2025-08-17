@@ -3,11 +3,11 @@ Una aplicación simple de tipo full-stack que cuenta con un formulario para el u
 
 #  Funcionalidades Principales
 
-Registro e Inicio de Sesión de Usuarios: Endpoints seguros para crear nuevos usuarios y autenticar a los existentes.
-Autenticación JWT: El backend genera JSON Web Tokens (JWT) tras un inicio de sesión exitoso.
-Rutas de Frontend Protegidas: El frontend de React protege ciertas páginas, haciéndolas accesibles solo para usuarios autenticados.
-Manejo de Expiración del Token: El frontend detecta automáticamente los tokens expirados y cierra la sesión del usuario.
-Gestión de Estado: Usa la Context API de React para gestionar el estado de autenticación global (token, datos del usuario).
+* Registro e Inicio de Sesión de Usuarios: Endpoints seguros para crear nuevos usuarios y autenticar a los existentes.
+* Autenticación JWT: El backend genera JSON Web Tokens (JWT) tras un inicio de sesión exitoso.
+* Rutas de Frontend Protegidas: El frontend de React protege ciertas páginas, haciéndolas accesibles solo para usuarios autenticados.
+* Manejo de Expiración del Token: El frontend detecta automáticamente los tokens expirados y cierra la sesión del usuario.
+* Gestión de Estado: Usa la Context API de React para gestionar el estado de autenticación global (token, datos del usuario).
 
 #  Tecnologías (Tech Stack)
 
